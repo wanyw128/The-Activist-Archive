@@ -1,0 +1,589 @@
+body{
+  margin: 0px;
+}
+
+header{
+  background: #474350;
+  width: 100%;
+}
+
+header img{
+  height: 100px;
+  padding: 20px 450px;
+}
+
+/* navigation bar styling */
+
+.sticky-div{
+  position: sticky;
+  top: 0;
+  z-index:2;
+}
+
+nav{
+  padding-bottom: 10px;
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: white;
+  background: #474350;
+  text-align: center;
+}
+
+.no_drop_down{
+  display: inline;
+}
+
+nav a{
+  font-family: monospace;
+  color:white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.nav_link{
+  padding: 30px 0px;
+  margin: 0px 20px;
+}
+
+.dropbtn{
+  background-color: #474350;
+  padding: 16px;
+  border:none;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+  padding-top: 5px;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #c4c1c9;
+  min-width: 160px;
+  border: solid 1px #887f94;
+  padding: 12px 16px;
+  z-index: 1;
+  left: -1px;
+}
+
+.dropdown-link{
+  text-align: center;
+  margin: 0;
+}
+
+/* nav pseudocode */
+
+.dropdown:hover .dropdown-content{
+  display: block;
+  background-color: #c4c1c9;
+  color: black;
+}
+
+.dropdown a:hover{
+  color: #474350;
+}
+
+.dropdown:hover .dropbtn{
+  background-color: #c4c1c9;
+}
+
+.no_drop_down:hover .dropbtn{
+  background-color: #c4c1c9;
+  color: #474350;
+}
+
+.no_drop_down a:hover{
+  color: #474350;
+}
+
+/* main styling */
+
+p{
+  color: #171A1D;
+  font-family: Arial;
+  font-size: 1.05em;
+}
+
+h1{
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 2em;
+}
+
+h2{
+  font-family: 'Poppins', Helvetica;
+  font-weight: normal;
+}
+
+.article h3, .cc-img h3{
+  font-family: 'Poppins', Helvetica;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.img-caption{
+  text-indent: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* movement main page */
+
+.movement-main{
+  display: inline-block;
+  background-color: #f2f2f2;
+  width:100%;
+  padding-bottom: 20px;
+}
+
+.movement-content{
+  background-color: #ffffff;
+  padding: 1.25em 1.5em 1.5em 1.5em;
+  position: relative;
+  border-radius: 10px;
+}
+
+.wrap-me-up{
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+.movement-heading{
+  border-bottom: 1px black solid;
+  text-align: left;
+}
+
+.movement-content h2{
+  border-bottom: black 1px solid;
+}
+
+/* contents */
+
+.contents{
+  font-family: Arial;
+  width: 24%;
+}
+
+.contents table{
+  display: block;
+  padding: 1em;
+  background-color: #f2f0e9;
+  border: 2px solid #717171;
+  border-radius: 10px;
+}
+
+.contents td{
+  padding: 0.5em;
+}
+
+.contents a{
+  color: black;
+}
+
+.contents a:hover{
+  background: #e0ded7;
+}
+
+.article, .contents{
+  text-align: left;
+}
+
+/* article */
+
+.article{
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.article p{
+  display: inline-block;
+  text-indent: 10px;
+}
+
+.cc-img-2{
+  display: inline-block; 
+  width: 49%; 
+  position: relative; 
+  margin-top: 20px;
+  top: 10px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+#cc-img-2{
+  top: 100px;
+}
+
+.cc-img-2 img{
+  display: inline-block; 
+  width: 100%
+}
+
+.cc-img-2 p{
+  display: inline-block; 
+  background: #f2f0e9; 
+  border-radius: 10px; 
+  padding: 10px;
+}
+
+.cc-img-left{
+  float: left;
+}
+
+.cc-img-left, .cc-img-right{
+  display: inline-block;
+  width: 50%;
+}
+
+.cc-img img{
+  display: inline-block;
+  width: 90%;
+}
+
+
+/* home page styling */
+.home-blurb{
+  margin: 5%;
+  font-family:'Poppins', Helvetica;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 1.75 em;
+}
+
+.home-blurb-2, .home-blurb-3{
+  padding: 40px;
+}
+
+.home-blurb-3{
+  background-color: #D0D6DD;
+  text-align: center;
+  font-family: 'Poppins', Helvetica;
+}
+
+.home-wrapper{
+  margin-bottom: 26.36px; 
+  padding: 40px;
+  padding-bottom: 60px;
+}
+
+.home-content-box{
+  display: inline-block;
+  width: 40%;
+}
+
+input[type=email]{
+  width: 20em;
+}
+
+input[placeholder]{
+  font-family: 'Poppins';
+}
+
+input:focus{
+  border: 0;
+}
+
+/* footer */
+footer{
+  padding: 10px 0px;
+  font-family: Arial;
+  width: 100%;
+}
+
+footer a{
+  color: black;
+  display: block;
+  margin: 16px 0px;
+}
+
+footer a:hover{
+  width: 110px;
+  background-color: #ebecf0;
+  color: #474350;
+}
+
+.footer-links{
+  width: 40%; 
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* timeline */
+
+.caption a{
+  color: yellow;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container h3{
+  font-family: 'Poppins', Helvetica;
+  font-weight: normal;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text{
+  color: #f2f2f2;
+  font-size: 15px;
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.caption{
+  color: white;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.caption p{
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text:hover .caption{
+  display:block;
+}
+
+.text:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.white-dot{
+  background-color:#f0eeeb;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.active, .white-dot:hover {
+  background-color: #887f94;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* resource page styling */
+
+.rsc-caption{
+  text-indent: 5em;
+  text-align: left;
+  font-size: 1.05em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.rsc-image-right{
+  width:50%;
+  float:right;
+}
+
+.rsc-image-left{
+  width:50%;
+  float:left;
+}
+
+.rsc-link{
+  color: rgb(112, 112, 112);
+  font-size: .98em;
+}
+
+.rsc-link:hover{
+  color: rgb(213, 215, 218);
+}
+
+h1 a:visited{
+  color: #595c48;
+}
+
+.filterDiv h1{
+  border-bottom: black 1px solid;
+  text-align: center;
+}
+
+a[target="_blank"]::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px;
+}
+
+/* filter */
+
+#sciline{
+  background-color: #B0B6BF;
+}
+
+.rsc-main{
+  background-color: #f2f2f2;
+  position: relative;
+  top: 1px;
+}
+
+.rsc-main h2{
+  border-bottom: black 1px solid;
+}
+
+.filter-content{
+  background: white;
+  padding: 1.25em 1.5em 1.5em 1.5em;
+  border-radius: 10px;
+}
+
+.container {
+  overflow: hidden;
+  width: 70%;
+  display: inline-block;
+}
+
+.btncontainer{
+  display: inline-block;
+  width: 27%;
+  margin-right: 15px;
+  float: left;
+  padding: 5px;
+}
+
+.btncontainer h2{
+  font-family: Arial;
+}
+
+.filter button{
+  margin: 5px;
+  border-radius: 10px;
+  font-family: 'Poppins', Helvetica;
+}
+
+.filter{
+  margin-right: 100px;
+  margin-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+}
+
+.filterDiv {
+  float: left;
+  clear: left;
+  text-align: center;
+  border: 1px solid black;
+  width: 90%;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #474350;
+  color: white;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Capstone Project - Climate Justice Resources</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header id="top">
+    <div>
+      <a href="index.html"><img src="https://lh4.googleusercontent.com/wgwzwxYyeuCJb75-wVuhTeDuys3v8G73BQvrcNBZO0e0MhAotJDas7cs5vg7RHtn2r-C11YaWA3FSmuZiLEt=w2880-h1418-rw" alt="logo"/></a>
+    </div>
+    </header>
+
+    <div class="sticky-div">
+    <nav>
+     <a href="index.html" style="position: relative; top: 11px; left: 5px;"><img src="https://lh3.googleusercontent.com/fife/AAWUweVNPpmsChViEzf_1tZKvbPRufEK795BJsx0bonn-kJxwT3Lynxu3qI_-rmO2F1WhnJxeS4E4thSJeCI3vZw2VyPr07ReTmJTjcPoQwcuiNm6XV_MzmDKoCrcx_-IzdIsmVBMAyANMSzxYKM11jJAd8-2Zlt7KLNPmpZz0Zdf346Vw2VwYMm2q0rDomAfiWtWjT5C62TcKDKGwZ5MxB5y3jGU2sBQwwLQ7_l5fjDe_Q8CjA7sEUWmp0xjXrh9dDD2McT11ttBvcHMTrJL2Z3CKrVrnXE3QSMckCm6poR7tIzUmp1TAk-BGYo2axVyCoYQG8sngbXFH-Vpu_dFttktBjQIrunYMizLcvCOzAkg4KQGxdf1Krr0kqs7tlfipLnh1s3UqyFJaAEBQm8vz9UFYZf5SwTUtVEckowAgQhaFWb0kE4-8LtP7RbbdstLhNgJOcpYKCgQ1GtMtInPY6V8wrJTnvBz5REKhHuli8nWLakzozp4J6hQHsvwR8sgb6VfIxHzHtQa73FBizHU5hGMsCwPf3vEEa4aRSEVQ7PJcvR3Txd5NUo0qPCufN9KgDhy9RL2NuE0RmnckXZxv2ooApEX1Q4bCPszkPdwYEGE0US5KClYQ2QdgOr92efl9qH58y4LyjfZWWCG0Uo7G3AZx_NvgUqXk2v06hlNXdyK8SVsHFjLGzhdZsgV449gAHH7To6Wov2TU0w8JeUd0J0W2_k91TCHKJbJeY=w2880-h1418-ft" alt="Home" width="35px"/> </a>
+
+     <div class="dropdown">
+        <button class="dropbtn">
+          <span class="nav_link">
+          <a href="climate.html">CLIMATE</a>
+          </span>
+        </button>
+        <div class="dropdown-content" style="right: -1px; min-width: 0;">
+         <p class="dropdown-link"><a href="#">RESOURCES</a></p>
+        </div>
+     </div>
+
+     <div class="dropdown">
+       <button class="dropbtn" style="padding-left: 18px; padding-right: 18px;">
+         <span class="nav_link" >
+           <a href="blm.html">BLM</a>
+         </span>
+       </button>
+       <div class="dropdown-content" style="min-width: 60px; width: 68px;">
+       <p class="dropdown-link"><a href="blm_resources.html">RESOURCES</a></p>
+       </div>
+     </div>
+
+     <div class="dropdown">
+        <button class="dropbtn">
+          <span class="nav_link">
+          <a href="aapi.html">AAPI</a>
+          </span>
+        </button>
+        <div class="dropdown-content" style="min-width: 65px; width:72px;">
+         <p class="dropdown-link"><a href="aapi_resources.html">RESOURCES</a></p>
+        </div>
+     </div>
+
+     <div class="dropdown">
+       <button class="dropbtn">
+      <span class="nav_link">
+       <a href="lgbt.html">LGBTQ+</a>
+      </span>
+      </button>
+       <div class="dropdown-content" style="min-width: 65px; width:88px;">
+          <p class="dropdown-link"><a href="lgbt_resources.html">RESOURCES</a></p>
+       </div>
+     </div>
+
+     <div class="dropdown">
+       <button class="dropbtn">
+      <span class="nav_link">
+        <a href="gender.html">GENDER EQUALITY</a>
+      </span>
+      </button>
+       <div class="dropdown-content">
+          <p class="dropdown-link"><a href="gender_resources.html">RESOURCES</a></p>
+       </div>
+     </div>
+
+     <div class="dropdown">
+       <button class="dropbtn">
+      <span class="nav_link">
+        <a href="religious.html">RELIGIOUS FREEDOM</a>
+      </span>
+      </button>
+       <div class="dropdown-content" style="min-width: 176px;">
+          <p class="dropdown-link"><a href="religious_resources.html">RESOURCES</a></p>
+       </div>
+     </div>
+    </nav>
+    </div>
+
+   <main class="rsc-main">
+    <div class="filter">
+      <div class="filter-content clearfix">
+     <!-- Control buttons -->
+     <div id="BtnContainer" class="btncontainer">
+       <h2> Filters </h2>
+       <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+       <button class="btn" onclick="filterSelection('educational')"> Educational</button>
+       <button class="btn" onclick="filterSelection('petitions')"> Petitions</button>
+       <button class="btn" onclick="filterSelection('fundraisers')"> Fundraisers</button>
+       <button class="btn" onclick="filterSelection('nonprofits')"> Nonprofits</button>
+     </div>
+
+     <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+     <div class="container">
+       <div class="filterDiv educational" id="sciline">
+          <img src="https://www.sciline.org/wp-content/uploads/2021/09/AdobeStock_194239479-1-2000x1333.jpeg" alt="Sea Level Rise and Climate Change" class="rsc-image-right" />
+         <h1>
+           <a href="https://www.sciline.org/services/quick-facts/" target="_blank" class="rsc-link" >SciLine</a>
+         </h1>
+         <p class="rsc-caption">SciLine is a free service for journalists and scientists based at the American Association for the Advancement of Science (AAAS), the world’s largest multidisciplinary scientific society. Editorially independent, nonpartisan, and funded by philanthropies, SciLine has a singular mission of enhancing the amount and quality of scientific evidence in news stories. Accuracy, clarity, fairness, transparency, and an unwavering commitment to evidence are core to that mission. <br> <p class="rsc-caption"> Quick Facts are concise summaries of newsworthy, science-related issues, designed to be easily scanned by journalists. Each page has been rigorously researched by SciLine staff and then reviewed by multiple independent experts, so journalists can insert selected facts into their stories with confidence. <b> SciLine has a Quick Facts series about climate change, consisting of nine subtopics such as <a href="https://www.sciline.org/climate/climate-change/environmental-justice/" target="_blank" class="rsc-link">environmental justice</a> and <a href="https://www.sciline.org/climate/climate-change/" target="_blank" class="rsc-link"> wildfires </a>. </b> </p> </p> 
+       </div>
+
+       <div class="filterDiv educational" style="background-color: #939DAD;">
+         <img src="https://climate.nasa.gov/system/news_items/main_images/3122_main_image.jpg" class="rsc-image-left">
+
+         <h1>
+           <a href="https://climate.nasa.gov/" target="_blank" class="rsc-link"> NASA Climate Change</a>
+         </h1>
+
+         <p class="rsc-caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quaerat eveniet dignissimos a cumque beatae dolorem, labore quisquam hic voluptatibus doloremque natus at repudiandae quos ducimus voluptate iure, rem esse fugiat omnis neque cum porro possimus! Facere ea fugiat nobis tempore alias dolor inventore, iure cupiditate accusamus hic dolorem, magnam nesciunt quam sint similique quo facilis. Quaerat blanditiis velit quia voluptatem omnis sit magnam ex perferendis ratione corporis quam est voluptas in, doloribus, repellendus assumenda alias nihil dolor quis vero possimus atque facilis pariatur rem? Laudantium vero expedita unde suscipit consequatur beatae ipsa dicta id animi, cupiditate provident consectetur hic molestias. Suscipit quibusdam reprehenderit voluptatem eum voluptates optio placeat natus, velit dolores illo accusantium soluta tenetur cumque. Nisi excepturi maiores dolorum ab ipsum cum sint asperiores, rerum tenetur eaque corrupti enim, quas debitis optio. Sit, soluta, quibusdam consequuntur odit, nesciunt ab fuga ipsum amet incidunt ea fugiat? Earum, illum doloribus.</p>
+       </div>
+
+       <div class="filterDiv educational" style="background-color: #cfbda3;">
+         <img src="https://www.un.org/sites/un2.un.org/files/feeling-the-heat.jpg" class="rsc-image-left"> 
+
+         <h1>
+           <a href="https://www.un.org/en/climatechange" target="_blank" class="rsc-link">United Nations Climate Action </a>
+         </h1>
+
+         <p class="rsc-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum soluta rerum ipsam labore tempore eum minus ea aspernatur cum provident officiis nobis error quam dolorem, iure unde tenetur nam quibusdam. Harum fugiat nostrum tempora alias quaerat a cum doloribus velit, dignissimos omnis necessitatibus esse, ullam debitis, nesciunt autem eius natus obcaecati adipisci dolorum eos asperiores qui ea iure. Assumenda error quaerat eligendi quisquam odio culpa perferendis temporibus corrupti? Iusto, nemo ipsum, earum quod voluptates neque reprehenderit eius dicta consequuntur veritatis quas perferendis! Qui doloremque alias exercitationem molestias sed fugiat sit et, possimus quaerat vel temporibus expedita perspiciatis est nam, corrupti accusamus dolorem asperiores maiores deserunt. In nihil deserunt vitae et ducimus praesentium debitis fuga, voluptas iusto odio quidem reprehenderit? Numquam possimus dolore vero animi! Fugit molestiae aperiam iste. Ipsam aliquam neque ducimus quasi optio magni sit facilis voluptates at, non, qui atque voluptatem facere labore cumque voluptatibus porro iusto debitis. </p>
+       </div>
+       <div class="filterDiv fundraisers">Clean Air Task Force</div>
+       <div class="filterDiv petitions">The Nature Conservancy</div>
+       <div class="filterDiv nonprofits">One Tree Planted</div>
+       <div class="filterDiv educational nonprofits">South Pole</div>
+       <div class="filterDiv educational">Clime Works</div>
+     </div>
+  
+
+   <script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+     // Show filtered elements
+       function w3AddClass(element, name) {
+         var i, arr1, arr2;
+         arr1 = element.className.split(" ");
+         arr2 = name.split(" ");
+         for (i = 0; i < arr2.length; i++) {
+           if (arr1.indexOf(arr2[i]) == -1) {
+             element.className += " " + arr2[i];
+            }
+          }
+        }
+
+      // Hide elements that are not selected
+       function w3RemoveClass(element, name) {
+         var i, arr1, arr2;
+         arr1 = element.className.split(" ");
+         arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+          }
+         element.className = arr1.join(" ");
+        }
+
+      // Add active class to the current control button (highlight it)
+      var btnContainer = document.getElementById("BtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+       btns[i].addEventListener("click", function() {
+         var current = document.getElementsByClassName("active");
+         current[0].className = current[0].className.replace(" active", "");
+         this.className += " active";
+        });
+      }
+   </script>
+   </div>
+
+   </div>
+   </main>
+
+    <footer id="rsc-footer">
+     <div style="width: 10%; display: inline-block;"></div>
+     <div class="footer-links">
+       <a href="#top">Return to Top</a>
+       <a href="index.html">About Us</a>
+       <p>Contact Us</p>
+     </div>
+    </footer>
+  </body>
+</html>
