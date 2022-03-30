@@ -1,15 +1,23 @@
+html{
+  width: 100%;
+}
+
 body{
   margin: 0px;
+  width: 100%;
 }
 
 header{
-  background: #474350;
+  background: #6d91bf;
   width: 100%;
 }
 
 header img{
   height: 100px;
-  padding: 20px 450px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 15px 0px;
 }
 
 /* navigation bar styling */
@@ -21,12 +29,12 @@ header img{
 }
 
 nav{
-  padding-bottom: 10px;
   border-top-style: solid;
   border-width: 1px;
   border-color: white;
-  background: #474350;
+  background: #6f92bf;
   text-align: center;
+  font-size: 100%;
 }
 
 .no_drop_down{
@@ -34,8 +42,11 @@ nav{
 }
 
 nav a{
-  font-family: monospace;
+  font-family: Arial;
   color:white;
+  font-size: 100%;
+  font-size: 14px;
+  text-align: left;
 }
 
 a{
@@ -48,26 +59,38 @@ a{
 }
 
 .dropbtn{
-  background-color: #474350;
-  padding: 16px;
+background-color: #6f92bf;
+  padding: 25px 16px;
   border:none;
+  font-size: 0.875em;
 }
 
 .dropdown{
   position: relative;
   display: inline-block;
-  padding-top: 5px;
+  white-space: no-wrap;
 }
 
 .dropdown-content{
   display: none;
   position: absolute;
-  background-color: #c4c1c9;
-  min-width: 160px;
-  border: solid 1px #887f94;
+  background-color: #c3d1db;
+  max-width: 300px;
   padding: 12px 16px;
   z-index: 1;
   left: -1px;
+  width: inherit;
+  left: 0;
+  text-align: left;
+}
+
+.dropdown-content ul{
+  padding: 0;
+}
+
+.dropdown-content li{
+  line-height: 2em;
+
 }
 
 .dropdown-link{
@@ -75,11 +98,23 @@ a{
   margin: 0;
 }
 
+
+.nav{
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li{
+  display: inline-block;
+}
+
 /* nav pseudocode */
 
 .dropdown:hover .dropdown-content{
   display: block;
-  background-color: #c4c1c9;
+  background-color: #c3d1db;
   color: black;
 }
 
@@ -88,11 +123,11 @@ a{
 }
 
 .dropdown:hover .dropbtn{
-  background-color: #c4c1c9;
+  background-color: #c3d1db;
 }
 
 .no_drop_down:hover .dropbtn{
-  background-color: #c4c1c9;
+  background-color: #c3d1db;
   color: #474350;
 }
 
@@ -123,12 +158,17 @@ h2{
 .article h3, .cc-img h3{
   font-family: 'Poppins', Helvetica;
   font-weight: normal;
-  text-decoration: underline;
 }
 
 .img-caption{
   text-indent: 10px;
   font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.25em;
+  color: black;
+  font-size: 0.85em;
+  font-weight: 0.5em;
+  width: 85%;
+  margin: auto;
 }
 
 /* movement main page */
@@ -137,7 +177,6 @@ h2{
   display: inline-block;
   background-color: #f2f2f2;
   width:100%;
-  padding-bottom: 20px;
 }
 
 .movement-content{
@@ -153,13 +192,86 @@ h2{
   padding-top: 20px;
 }
 
-.movement-heading{
-  border-bottom: 1px black solid;
-  text-align: left;
-}
 
 .movement-content h2{
   border-bottom: black 1px solid;
+  text-align: center;
+}
+
+.preview-img{
+  width: 100%;
+  background-image: url("https://climate.nasa.gov/system/feature_items/images/1074_1-woolsey_fire-courtesy-peter-buschmann-1041.jpeg?1647998793912");
+  background-position: center;
+  background-size: cover;
+  height: 460px;
+  position: relative;
+}
+
+.sublinks ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sublinks li{
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.sublinks{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1.75;
+  z-index: 1;
+}
+
+.sublinks h1 , .sublinks h3, .sublinks a{
+  font-family: Helvetica;
+  color: white;
+  margin: 0;
+}
+
+.sublinks a{
+  font-size: 105%;
+  font-weight: 550;
+  padding: 5px 20px;
+}
+
+.sublinks h1{
+  font-weight: 600;
+  font-size: 2.25em;
+}
+
+.sublinks a:hover{
+  color: #c3d1db;
+}
+
+.gradient-bottom{
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.gradient-top{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
+  height: 50%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.preview-tab{
+  background: #f2f2f2;
+  padding-top: 8px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.preview-tab a{
+color: #8499bd;
 }
 
 /* contents */
@@ -189,31 +301,31 @@ h2{
   background: #e0ded7;
 }
 
-.article, .contents{
-  text-align: left;
-}
 
 /* article */
 
 .article{
   width: 50%;
-  display: inline-block;
   vertical-align: top;
+  margin: auto;
 }
 
 .article p{
   display: inline-block;
   text-indent: 10px;
+  line-height: 1.75em;
+  color: black;
+  font-size: 1em;
+  font-weight: 0.5em;
 }
 
 .cc-img-2{
-  display: inline-block; 
+
   width: 49%; 
-  position: relative; 
   margin-top: 20px;
-  top: 10px;
   margin-bottom: 20px;
-  float: right;
+  margin: auto;
+
 }
 
 #cc-img-2{
@@ -225,11 +337,17 @@ h2{
   width: 100%
 }
 
-.cc-img-2 p{
+.cc-img-2 p, .cc-img p{
   display: inline-block; 
-  background: #f2f0e9; 
-  border-radius: 10px; 
-  padding: 10px;
+  padding: 1em 0em 3em 0em;
+  margin: 0;
+
+  color: grey;
+  font-size: 0.9em;
+}
+
+.cc-img a{
+  color: #90add1;
 }
 
 .cc-img-left{
@@ -244,6 +362,11 @@ h2{
 .cc-img img{
   display: inline-block;
   width: 90%;
+}
+
+div.cc-img{
+  margin: auto;
+  text-align: center;
 }
 
 
@@ -275,6 +398,7 @@ h2{
 .home-content-box{
   display: inline-block;
   width: 40%;
+  color: black;
 }
 
 input[type=email]{
@@ -294,27 +418,48 @@ footer{
   padding: 10px 0px;
   font-family: Arial;
   width: 100%;
+  background-color: #9fa7b5;
 }
 
 footer a{
-  color: black;
-  display: block;
-  margin: 16px 0px;
+  color: #f2f2f2;
+}
+
+footer li{
+    padding: 10px 0px;
+    box-sizing: border-box;
 }
 
 footer a:hover{
   width: 110px;
-  background-color: #ebecf0;
   color: #474350;
 }
 
 .footer-links{
-  width: 40%; 
   display: inline-block;
   margin-top: 10px;
 }
 
+.footer-heading{
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: #f2f2f2;
+}
+
+footer ul{
+  list-style-type: none;
+}
+
+footer h3{
+  margin: 0;
+}
+
+
 /* timeline */
+
+.timeline{
+  padding: 2em 0em;
+}
 
 .caption a{
   color: yellow;
@@ -326,6 +471,8 @@ footer a:hover{
   max-width: 1000px;
   position: relative;
   margin: auto;
+  max-height: 30em;
+  overflow: hidden;
 }
 
 .slideshow-container h3{
@@ -370,10 +517,11 @@ footer a:hover{
   color: #f2f2f2;
   font-size: 15px;
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   width: 100%;
   text-align: center;
   background-color: rgba(0,0,0,0.8);
+
 }
 
 .caption{
@@ -382,7 +530,8 @@ footer a:hover{
   font-family: Arial, sans-serif;
   width: 100%;
   text-align: center;
-  display: none;
+    display: none;
+  transition: all 2s ease-in 0s;
 }
 
 .caption p{
@@ -406,6 +555,7 @@ footer a:hover{
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* The dots/bullets/indicators */
@@ -448,6 +598,11 @@ footer a:hover{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@keyframes fade-out{
+  from {opacity: 1}
+  to {opacity: .4}
 }
 
 .clearfix::after {
@@ -558,17 +713,17 @@ a[target="_blank"]::after {
   clear: left;
   text-align: center;
   border: 1px solid black;
+  border-radius: 10px;
   width: 90%;
   margin: 2px;
-  display: none; /* Hidden by default */
+  display: none; 
+  overflow: hidden;
 }
 
-/* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
 
-/* Style the buttons */
 .btn {
   border: none;
   outline: none;
@@ -577,13 +732,189 @@ a[target="_blank"]::after {
   cursor: pointer;
 }
 
-/* Add a light grey background on mouse-over */
 .btn:hover {
   background-color: #ddd;
 }
 
-/* Add a dark background to the active button */
 .btn.active {
   background-color: #474350;
   color: white;
+}
+
+
+
+
+
+.tml-main{
+background-color: #f2f2f2;
+padding: 5em 0em;
+}
+
+.tml{
+  margin: 0;
+  border: 0;
+  height: 100%;
+  position: relative;
+}
+
+.spine{
+  width: 2px;
+  margin: 0;
+  padding-bottom: 1em;
+  border: 0;
+  margin; auto;
+  height: 92%;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+}
+
+.tml-line{
+  height: 2px;
+  background-color: black;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.mdl-line{
+  top: 70%;
+}
+
+.sml-line{
+  top: 50%;
+}
+
+.right-line{
+  right: 50%;
+}
+
+.first-line{
+  top: 70%;
+  right: 50%;
+}
+
+.tml-container{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.bbl-container{
+  padding: 10em 0em;
+}
+
+.tml-item{
+  box-sizing: border-box;
+  width: 50%;
+  display: inline-block;
+  margin: auto;
+  position: relative;
+}
+
+.bubble{
+  border-radius: 50%;
+  background-image: url("https://media.istockphoto.com/photos/polar-bear-on-ice-close-to-golden-glittering-water-picture-id182183614?k=20&m=182183614&s=612x612&w=0&h=SOT02m2sYeclFtlh5VLWs6ASVTGAmYINs1GLKAXKObM=");
+  background-position: center;
+  background-size: cover;
+
+  display: flex; 
+align-items: center;
+  padding: 40px; 
+  position: relative;
+  width: 55%;
+  margin: auto;
+
+}
+
+.bubble::before {
+    content: "";
+    margin-top: 100%;
+}
+
+.lrg-container{
+  padding-top: 200px;
+}
+
+.mdl-container{
+  padding-top: 590px;
+}
+
+.sml-container{
+  padding-top: 200px;
+}
+
+.mid{
+  width: 40%;
+}
+
+.small{
+  width: 30%;
+}
+
+.right{
+  position: absolute;
+}
+
+.first{
+  padding-top: 450px;
+}
+
+.bbl-title{
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #545454;
+}
+
+.tml-desc{
+  width: 80%;
+  color: grey;
+  margin: auto;
+  height: 20px;
+}
+
+.tml-desc p{
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.tml-year{
+  font-family: Helvetica;
+  text-align: center;
+  color: black;
+  font-size: 5em;
+}
+
+.tml-year h3{
+  margin: 0;
+  padding-top: 1em;
+  border: 0;
+  
+}
+
+.tmlDot{
+  border-radius: 50%;
+  background-color: black;
+  margin: auto;
+  width: 5em;
+  height: 5em;
+}
+
+#climate-1824{
+    background-image: url("https://news.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/3159891_72dpi.jpg");
+  background-position: 75% 50%;
+}
+
+#climate-1860{
+  background-image: url("https://www.ucl.ac.uk/news/sites/news/files/tyndall_resized.jpg");
+  background-position: 50% 50%;
+}
+
+#climate-1938{
+  background-image: url("https://ichef.bbci.co.uk/news/1024/media/images/67259000/jpg/_67259261_callendar-fromuea.jpg");
+  background-position: 50% 60%;
 }
