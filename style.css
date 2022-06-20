@@ -202,7 +202,7 @@ h2{
   background-image: url("https://static01.nyt.com/images/2019/09/20/climate/20cli-protests-slide-XMBG/20cli-protests-slide-XMBG-videoSixteenByNine3000.jpg");
   background-position: center;
   background-size: cover;
-  height: 460px;
+  height: 550px;
   position: relative;
 }
 
@@ -403,8 +403,12 @@ div.cc-img{
 
 .home-content-box{
   display: inline-block;
-  width: 40%;
+  width: 50%;
   color: black;
+}
+
+#home-quote{
+  padding: 0em 2em;
 }
 
 input[type=email]{
@@ -556,6 +560,7 @@ footer h3{
   position: absolute;
   top: 0;
   font-family: Helvetica, Arial, sans-serif;
+  z-index: 1;
 }
 
 .dot {
