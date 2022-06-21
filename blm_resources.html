@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700" rel="stylesheet" type="text/css" />
   </head>
 
-  <body>
+  <body onload="randomizeList()">
     <header id="top">
     <div>
       <a href="index.html"><img src="https://lh3.googleusercontent.com/fife/AAWUweWbydpxO00fXMJwe9uk6SetJlR2Rm0GMoS0pxyV1flJl2VRVSGUEQlQZrMMnN8ncGUua2aihjQs_B_4dR9lKPRO5wmdHo-SAG51JgsQPvf6zLQMIwRxu86DDHLMpdjllCRhvG7Yo1pDG1ADZVEVKaBVcmncMvWdXtY6gHG6ZyhYx_UxR6S7viwcn5gA66cgi_unn9NlJB_yW70zyjelrEgKIpNbKRxoyoCWnk9AToCfheaZk-EGVc4FQUMBVhcxoO6DMxCRd5u8ZYG9MfGP41lRDkSmQfNa9HKPj4BUHWRWSQKIbNJhak5FESzMX5c62K_xL8kcu7gEraE9sIE3GM5rJ1lTkzMM6QPUcQOJYXKnrM_90K1QUTjVkPrelRPwVANOw6tua4UnfYaA1I_c6hSvkJkwJSEcpRfRUa8e4c9XNAzBmitRaacZ1BAhxlxyTadacqz1Q4uvJ1FaTKbFcI9qshLlgamnOHOhcm_ye71ETsihLDh3ZvcFA2ne7VIyP8GmCOn5VybUg4eADUx-F2YMD4lGWDYEId9bLa3NBKPoyeCOdumrHq0TyMDPMYZFaN-McrHMsTQUiT2vHXMH6hjdt1uw5rglE-5voGT6-ojh8dMaw88apPxQExQJxSF5N5IUhJGLbiRgfugNvic_-PUHklIs_YUbS49anJcyfW43cVOqWzt-jpRQtWgKiP5ck6bsbwSOFLSq_zdt13OZ1tpxsMiTsJjd4Lw=w2880-h1418-ft" alt="logo"/></a>
@@ -103,7 +103,6 @@
    <main class="rsc-main">
     <div class="filter">
       <div class="filter-content clearfix">
-     <!-- Control buttons -->
      <div id="BtnContainer" class="btncontainer">
        <h2> Filters </h2>
        <button class="btn active" onclick="filterSelection('all')"> Show All</button>
@@ -115,15 +114,16 @@
 
 
      <div class="container">
-       <div class="filterDiv educational" >
+       <li id="resourceList">
+       <ul class="filterDiv educational" >
           <img src="https://blacklivesmatter.com/wp-content/uploads/2021/12/blmgnf-news-jussie-smollett-120721-1000x750-01-768x576.jpg " alt="BLM" class="rsc-image-right" />
          <h1>
            <a href="https://blacklivesmatter.com/ " target="_blank" class="rsc-link" >Black Lives Matter</a>
          </h1>
          <p class="rsc-caption">The Black Lives Matter organization provides free news and highlights important resources and events for BLM allies. Learn about Juneteenth, #BlackLoveLetters, and toolkits for organizers of activist or awareness events. </p> 
-       </div>
+       </ul>
 
-       <div class="filterDiv educational fundraisers">
+       <ul class="filterDiv educational fundraisers">
          <img src="https://bailproject.org/wp-content/uploads/2019/03/group_1500.jpg" class="rsc-image-left">
 
          <h1>
@@ -131,9 +131,9 @@
          </h1>
 
          <p class="rsc-caption">The Bail Project fights mass incarceration and racial disparities in the bail system by helping to fund bails and reunite families. This project has chains in various states of the U.S. and celebrates nationwide contributions and impact. Explore the history of the bail systems and donate to the freedom of those in pretrial detention.</p>
-       </div>
+       </ul>
 
-       <div class="filterDiv educational fundraisers">
+       <ul class="filterDiv educational fundraisers">
 
          <h1>
            <a href="https://www.libertyfund.nyc/" target="_blank" class="rsc-link">The Liberty Fund </a>
@@ -141,9 +141,9 @@
 
          <p class="rsc-caption"> The Liberty Fund mission is to “decarcerate” and support NYC residents who are subjected to bails they cannot afford. Through donations and their citywide programs, the Charitable Bail Program and the ROR (Released On Recognizance) Program, the Liberty Fund has maintained a significant impact in mitigating NYC’s jail population. Through this website, viewers are able to find resources and learn more about the unfair bail system, donate, or fundraise for the Liberty Fund. 
 </p>
-       </div>
+       </ul>
        
-       <div class="filterDiv petitions">
+       <ul class="filterDiv petitions">
          <img src="https://images.squarespace-cdn.com/content/v1/5ebafb89d75bc12ca3897a1a/1589315548487-BEQ2W2D4ARXHT2QMDTOT/Image-from-iOS-3-Cropped.jpg?format=1500w" class="rsc-image-right">
 
          <h1>
@@ -152,8 +152,8 @@
 
          <p class="rsc-caption">Justice for Breonna Taylor is a website dedicated to encouraging viewers to sign a petition urging authorities to bear responsibility of taking the life of Breonna Taylor. 
 </p>
-       </div>
-       <div class="filterDiv educational other">
+       </ul>
+       <ul class="filterDiv educational other">
          <img src="https://static01.nyt.com/images/2019/10/16/podcasts/1619-album-art-copy/1619-album-art-superJumbo.jpg?quality=75&auto=webp" class="rsc-image-left">
 
          <h1>
@@ -162,8 +162,8 @@
 
          <p class="rsc-caption">“1619” is a New York Times audio series, hosted by Nikole Hannah-Jones, that examines the long shadow of American slavery. Listen to the episodes below, or read the transcripts by clicking the icon to the right of the play bar.  
 </p>
-       </div>
-       <div class="filterDiv petitions">
+       </ul>
+       <ul class="filterDiv petitions">
          <img src="https://assets.change.org/photos/2/co/nc/rNcONcexIiVqucv-800x450-noPad.jpg?1589308527" class="rsc-image-right">
 
          <h1>
@@ -174,8 +174,8 @@
 
   This petition’s mission is calling for the Prime Minister to establish a public inquiry as to the circumstances that led to the death of Belly Mujinga, a worker at Govia Thameslink Railway who was assaulted at work by a man who claimed to have COVID-19 and later died of the virus. 
 </p>
-       </div>
-       <div class="filterDiv petitions educational">
+       </ul>
+       <ul class="filterDiv petitions educational">
          <img src="https://blacklivesmatters.carrd.co/assets/images/card.jpg?v=d74a7ced " class="rsc-image-right">
 
          <h1>
@@ -186,8 +186,8 @@
 
   All credit is due to Nico, the creator of this carrd. This resource contains links to enact change by donating, signing petitions, voting, and contacting officials. The carrd also provides mental health and educational resources, in addition to information about other causes like #StopAsianHate and the Yemen Crisis. 
 </p>
-       </div>
-       <div class="filterDiv petitions educational">
+       </ul>
+       <ul class="filterDiv petitions educational">
          <img src="https://www.pb-resources.com/assets/pbTitle.png" class="rsc-image-left">
 
          <h1>
@@ -198,8 +198,8 @@
 
 Pb-Resources contains resources for a wide variety of BLM issues, including Black Trans Lives and bail/arrest reform. Read more about topics ranging from the 13th Amendment to allyship with Pb-Resources' BLM Cheat Sheet. Call for funds or support Black businesses. Send auto-generated emails to officials, and more. 
 </p>
-       </div>
-       <div class="filterDiv petitions educational">
+       </ul>
+       <ul class="filterDiv petitions educational">
 
          <h1>
            <a href="https://docs.google.com/document/u/0/d/13O7yipKHeIF2-QJ_K9IKIdLQAlN8NgEOF62qQjUjEVM/mobilebasic" target="_blank" class="rsc-link"> BLM Resources Document</a>
@@ -209,59 +209,13 @@ Pb-Resources contains resources for a wide variety of BLM issues, including Blac
 
 This document provides an abundance of donation links, petitions, and resources for allies, including international allies. There is also a list of funds broken down by state and of readings and media about BLM. 
 </p>
-       </div>
+       </ul>
+       </li>
+  </div>
   
-  
 
-   <script>
-      filterSelection("all")
-      function filterSelection(c) {
-        var x, i;
-        x = document.getElementsByClassName("filterDiv");
-        if (c == "all") c = "";
-        for (i = 0; i < x.length; i++) {
-          w3RemoveClass(x[i], "show");
-          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-        }
-      }
-
-
-       function w3AddClass(element, name) {
-         var i, arr1, arr2;
-         arr1 = element.className.split(" ");
-         arr2 = name.split(" ");
-         for (i = 0; i < arr2.length; i++) {
-           if (arr1.indexOf(arr2[i]) == -1) {
-             element.className += " " + arr2[i];
-            }
-          }
-        }
-
-
-       function w3RemoveClass(element, name) {
-         var i, arr1, arr2;
-         arr1 = element.className.split(" ");
-         arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-              arr1.splice(arr1.indexOf(arr2[i]), 1);
-            }
-          }
-         element.className = arr1.join(" ");
-        }
-
-
-      var btnContainer = document.getElementById("BtnContainer");
-      var btns = btnContainer.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-       btns[i].addEventListener("click", function() {
-         var current = document.getElementsByClassName("active");
-         current[0].className = current[0].className.replace(" active", "");
-         this.className += " active";
-        });
-      }
-   </script>
-   </div>
+   <script src="filter.js"></script>
+   <script src="randomizeList.js"></script>
 
    </div>
    </main>

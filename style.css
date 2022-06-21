@@ -659,6 +659,26 @@ a[target="_blank"]::after {
   margin: 0 3px 0 5px;
 }
 
+#resourceList{
+  list-style-type: none;
+}
+
+#resourceList ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#resourcesList{
+  list-style-type: none;
+}
+
+#resourcesList ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* filter */
 
 .rsc-main{

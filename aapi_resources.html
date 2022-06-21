@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body onload="randomizeList()">
   <header id="top">
     <div>
       <a href="index.html"><img
@@ -111,10 +111,9 @@
     <div class="gradient-bottom"></div>
   </div>
 
-  <main class="rsc-main">
+  <main class="rsc-main" >
     <div class="filter">
       <div class="filter-content clearfix">
-        <!-- Control buttons -->
         <div id="BtnContainer" class="btncontainer">
           <h2> Filters </h2>
           <button class="btn active" onclick="filterSelection('all')"> Show All</button>
@@ -124,7 +123,9 @@
         </div>
 
         <div class="container">
-          <div class="filterDiv educational fundraisers">
+          <li id="resourceList" >
+          <ul class="filterDiv educational fundraisers">
+           
             <img src="https://stopaapihate.org/wp-content/uploads/2021/02/stopaapihate-logo-1353x1536.png"
               alt="Sea Level Rise and Climate Change" class="rsc-image-right" />
             <h1>
@@ -136,9 +137,10 @@
               resources for educators and individuals. It also allows viewers to report incidents against AAPI, and
               shares data collected about these reports.
             </p>
-          </div>
+          </ul>
+         
 
-          <div class="filterDiv educational fundraisers">
+          <ul class="filterDiv educational fundraisers">
             <img
               src="https://aapiequityalliance.org/wp-content/uploads/2021/09/cynthia-choi-manjusha-p-kulkarni-russell-jeung-time-100-2021-1.webp"
               class="rsc-image-left">
@@ -151,9 +153,10 @@
               civic engagement. Read about their initiatives, including their COVID-19 Health Grants, explore the
               website's newsletters, and use the COVID-19 resources available on their page.
             </p>
-          </div>
+              </ul>
+            
 
-          <div class="filterDiv educational nonprofit">
+          <ul class="filterDiv educational nonprofit">
             <img
               src="https://images.squarespace-cdn.com/content/v1/61268e44b80890342e6131ba/1629926576150-JM05TA303Q83ZQEZU8FO/jason-leung-0IRY41yxLxs-unsplash+%281%29.jpg?format=1000w"
               class="rsc-image-right">
@@ -168,9 +171,10 @@
               Partipate in OCA-Asian Pacific American Advocates programs, which are inclusive to various age groups,
               find and join your local chapter, or read released articles in their "Newsroom".
             </p>
-          </div>
 
-          <div class="filterDiv educational">
+          </ul>
+
+          <ul class="filterDiv educational">
             <img
               src="https://aaari.info/assets/2021/12/2021-AAARI-Square-RGB-Logo.jpg"
               class="rsc-image-left">
@@ -182,9 +186,9 @@
             <p class="rsc-caption">The Asian American / Asian Research Institute is a university-wide scholarly research and resource center established by the CUNY Board of Trustees that focuses on policies and issues that affect Asians and Asian Americans. It covers four areas: Asian American Studies; East Asian Studies; South Asian Studies; and Trade & Technology Studies. Access the many programs, scholarships and awards, events, and resources provided by the AAARI. Learn from their lectures and read their publications. The AAARI also shares a <a href="https://aaari.info//asian-american-timeline/" target="_blank">timeline</a> highlighting the achievements, policies, and other notable historical moments concerning Asian Americans and Asians. 
 
             </p>
-          </div>
+          </ul>
 
-          <div class="filterDiv educational nonprofit">
+          <ul class="filterDiv educational nonprofit">
 
             <h1>
               <a href="https://asianamericanstudiesonline.com/aanews/" target="_blank" class="rsc-link"> Asian American Studies Online</a>
@@ -192,9 +196,9 @@
 
             <p class="rsc-caption">Asian American Studies Online is the first electronic online commons for scholars, practitioners, artists, and activists who are committed to doing and disseminating research and transcultural perspectives on Asian and Pacific American Studies. View news articles, dialogues and interviews, and perspectives from theorists, activists, and communities involved in Asian American and Pacific American studies. 
             </p>
-          </div>
+          </ul>
 
-          <div class="filterDiv educational">
+          <ul class="filterDiv educational">
             <img
               src="https://cpc-nyc.org/sites/default/files/ECH_Prog__LSBDCC_in_a_row.jpg"
               class="rsc-image-left">
@@ -205,9 +209,9 @@
 
             <p class="rsc-caption">The Chinese-American Planning Council CPC is a social service organization whose mission is to serve and empower Asian American, immigrant, and low-income communities in New York City by ensuring they have equitable access to the resources and opportunities needed to thrive.
             </p>
-          </div>
+          </ul>
 
-          <div class="filterDiv educational nonprofit">
+          <ul class="filterDiv educational nonprofit">
             <img
               src="https://asamnews.com/wp-content/uploads/2020/06/asamnews-logo-544x180-1.png"
               class="rsc-image-right">
@@ -218,9 +222,9 @@
 
             <p class="rsc-caption">AsAmNews is a community of users interested in reading, learning and commenting on news, events, people & issues in the Asian Americans and Pacific Islander communities. The site is dedicated to documenting the Asian American experience to showcase its depth and diversity. Here you will find a full roundup of headlines and blogs with original reporting along with aggregated headlines from both mainstream and ethnic media. 
             </p>
-          </div>
+          </ul>
 
-          <div class="filterDiv educational">
+          <ul class="filterDiv educational">
             <img
               src="https://www.apalanet.org/uploads/8/3/2/0/83203568/apala-logoype-mark.jpg"
               class="rsc-image-left">
@@ -234,9 +238,9 @@
 Through this website, you can connect to a regional APALA chapter, support APALA by joining their membership, and access a multitude of COVID-19, protest, and anti Asian violence toolkits and resources. Sign up for their newsletter, job opportunities at APALA, and external opportunities in the labor movement. Donate to or inquire for a COVID-19 community fund, read the stories of AAPI workers, or join one of APALA engaging and uplifting events. 
 
             </p>
-          </div>
+          </ul>
 
-          <div class="filterDiv educational nonprofit">
+          <ul class="filterDiv educational nonprofit">
             <img
               src="https://aaopmn.org/wp-content/uploads/2020/07/AAOPBanner-01.png"
               class="rsc-image-right">
@@ -247,9 +251,9 @@ Through this website, you can connect to a regional APALA chapter, support APALA
 
             <p class="rsc-caption">The mission of the Asian American Organizing Project is to empower young Asian Minnesotans to create systems change for an equitable, conscious, and just society. Through this initiative, young Asian Minnesotans (14 – 35 years old) will lead long-term racial, economic, and gender justice through reflective leadership, co-creating community change, and amplifying narratives. Through this resource, users can access resources, volunteer at Asian American Organizing Project’s many programs, and read AAPI stories and blogs. 
             </p>
-          </div>
+          </ul>
 
-          <div class="filterDiv educational">
+          <ul class="filterDiv educational">
             <img
               src="https://18millionrising.org/static/images/featured/aapi-22.png"
               class="rsc-image-left">
@@ -261,56 +265,14 @@ Through this website, you can connect to a regional APALA chapter, support APALA
             <p class="rsc-caption">18 Million Rising has the vision of educating, inspiring, and mobilizing young Asian Americans to fight against the underrepresentation of Asian Americans in the United States. Learn about featured AAPI campaigns or pitch a campaign yourself through this resource. 
 
             </p>
-          </div>
+          </ul>
+          </li>
         </div>
 
 
-        <script>
-          filterSelection("all")
-          function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("filterDiv");
-            if (c == "all") c = "";
-            for (i = 0; i < x.length; i++) {
-              w3RemoveClass(x[i], "show");
-              if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-            }
-          }
-
-
-          function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-              if (arr1.indexOf(arr2[i]) == -1) {
-                element.className += " " + arr2[i];
-              }
-            }
-          }
-
-          function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-              while (arr1.indexOf(arr2[i]) > -1) {
-                arr1.splice(arr1.indexOf(arr2[i]), 1);
-              }
-            }
-            element.className = arr1.join(" ");
-          }
-
-          var btnContainer = document.getElementById("BtnContainer");
-          var btns = btnContainer.getElementsByClassName("btn");
-          for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-              var current = document.getElementsByClassName("active");
-              current[0].className = current[0].className.replace(" active", "");
-              this.className += " active";
-            });
-          }
+        <script src="filter.js">
         </script>
+        <script src="randomizeList.js"></script>
       </div>
 
     </div>

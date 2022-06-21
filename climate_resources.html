@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700" rel="stylesheet" type="text/css" />
   </head>
 
-  <body>
+  <body onload="randomizeList()">
     <header id="top">
     <div>
       <a href="index.html"><img src="https://lh3.googleusercontent.com/fife/AAWUweWbydpxO00fXMJwe9uk6SetJlR2Rm0GMoS0pxyV1flJl2VRVSGUEQlQZrMMnN8ncGUua2aihjQs_B_4dR9lKPRO5wmdHo-SAG51JgsQPvf6zLQMIwRxu86DDHLMpdjllCRhvG7Yo1pDG1ADZVEVKaBVcmncMvWdXtY6gHG6ZyhYx_UxR6S7viwcn5gA66cgi_unn9NlJB_yW70zyjelrEgKIpNbKRxoyoCWnk9AToCfheaZk-EGVc4FQUMBVhcxoO6DMxCRd5u8ZYG9MfGP41lRDkSmQfNa9HKPj4BUHWRWSQKIbNJhak5FESzMX5c62K_xL8kcu7gEraE9sIE3GM5rJ1lTkzMM6QPUcQOJYXKnrM_90K1QUTjVkPrelRPwVANOw6tua4UnfYaA1I_c6hSvkJkwJSEcpRfRUa8e4c9XNAzBmitRaacZ1BAhxlxyTadacqz1Q4uvJ1FaTKbFcI9qshLlgamnOHOhcm_ye71ETsihLDh3ZvcFA2ne7VIyP8GmCOn5VybUg4eADUx-F2YMD4lGWDYEId9bLa3NBKPoyeCOdumrHq0TyMDPMYZFaN-McrHMsTQUiT2vHXMH6hjdt1uw5rglE-5voGT6-ojh8dMaw88apPxQExQJxSF5N5IUhJGLbiRgfugNvic_-PUHklIs_YUbS49anJcyfW43cVOqWzt-jpRQtWgKiP5ck6bsbwSOFLSq_zdt13OZ1tpxsMiTsJjd4Lw=w2880-h1418-ft" alt="logo"/></a>
@@ -112,16 +112,17 @@
 
         
      <div class="container">
-       <div class="filterDiv educational" >
+       <li id="resourceList">
+       <ul class="filterDiv educational" >
           <img src="https://www.sciline.org/wp-content/uploads/2021/09/AdobeStock_194239479-1-2000x1333.jpeg" alt="Sea Level Rise and Climate Change" class="rsc-image-right" />
          <h1>
            <a href="https://www.sciline.org/services/quick-facts/" target="_blank" class="rsc-link" >SciLine</a>
          </h1>
          <p class="rsc-caption">
            SciLine is a free service for journalists and scientists based at the American Association for the Advancement of Science (AAAS), the world’s largest multidisciplinary scientific society. Editorially independent, nonpartisan, and funded by philanthropies, SciLine has a singular mission of enhancing the amount and quality of scientific evidence in news stories. Accuracy, clarity, fairness, transparency, and an unwavering commitment to evidence are core to that mission. <br> <p class="rsc-caption"> Quick Facts are concise summaries of newsworthy, science-related issues, designed to be easily scanned by journalists. Each page has been rigorously researched by SciLine staff and then reviewed by multiple independent experts, so journalists can insert selected facts into their stories with confidence. <b> SciLine has a Quick Facts series about climate change, consisting of nine subtopics such as <a href="https://www.sciline.org/climate/climate-change/environmental-justice/" target="_blank" class="rsc-link">environmental justice</a> and <a href="https://www.sciline.org/climate/climate-change/" target="_blank" class="rsc-link"> wildfires </a>. </b> </p> </p> 
-       </div>
+       </ul>
 
-       <div class="filterDiv educational">
+       <ul class="filterDiv educational">
          <img src="https://climate.nasa.gov/system/news_items/main_images/3122_main_image.jpg" class="rsc-image-left">
 
          <h1>
@@ -130,9 +131,9 @@
 
          <p class="rsc-caption">The mission of “Global Climate Change: Vital Signs of the Planet” is to provide the public with accurate and timely news and information about Earth’s changing climate, along with current data and visualizations, presented from the unique perspective of NASA, one of the world’s leading climate research agencies.</p>
          <p class="rsc-caption">View images that depict the impact of global climate change and watch real-time visualizations of the Earth. </p>
-       </div>
+       </ul>
 
-       <div class="filterDiv educational">
+       <ul class="filterDiv educational">
          <img src="https://www.un.org/sites/un2.un.org/files/ig_earth05.jpg" class="rsc-image-left"> 
 
          <h1>
@@ -140,8 +141,8 @@
          </h1>
 
          <p class="rsc-caption"> United Nations Climate Action provides global news and scientific facts about climate change. This resource provides solutions and ways to raise climate iniatives. From motivational speeches and to an individual action app that viewers can download, the UN Climate Actions page is loaded with information for various demographic groups.   </p>
-       </div>
-       <div class="filterDiv fundraisers">
+       </ul>
+       <ul class="filterDiv fundraisers">
          <img src="https://cdn.catf.us/wp-content/uploads/2021/09/21092012/Hotspot_Test_8.jpg" class="rsc-image-right"> 
 
          <h1>
@@ -149,10 +150,10 @@
          </h1>
 
          <p class="rsc-caption"> The mission of the Carbon Air Task Force is to decarbonize the global energy system to address climate change. This organization pushes change in technologies and policies needed to get to a zero-emissions, high-energy planet at an affordable cost. With the support of donors and partners, they are expanding their impact around the world. Over the past 25 years, CATF has carved out a unique role in the environmental and climate movement as a science-driven, solutions-focused, and strategic organization that gets results.</p>
-       </div>
+       </ul>
 
        
-       <div class="filterDiv nonprofits fundraisers">         
+       <ul class="filterDiv nonprofits fundraisers">         
          <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/ray-hennessy-687404-unsplash.jpg?crop=247,0,1481,1975&wid=1200&hei=1600&scl=1.234375" class="rsc-image-right"> 
 
          <h1>
@@ -160,8 +161,8 @@
          </h1>
 
          <p class="rsc-caption"> The Nature Conservancy is an organization that addresses climate change and biodiversity loss using technology and science, and aims to make a major difference by 2030. Their team works with leaders across the political spectrum and indigenous communities to help conserve land in over 70 countries and territories. Find out how to reduce your carbon footprint, sign petitions and write messages to politicians to take climate action, and find volunteering events to attend. </p>
-       </div>
-       <div class="filterDiv fundraisers educational">
+       </ul>
+       <ul class="filterDiv fundraisers educational">
          <img src="https://cdn.shopify.com/s/files/1/0326/7189/t/65/assets/pf-93e85d84--Socialimpact.jpg?v=1602782652" class="rsc-image-left">
 
          <h1>
@@ -171,8 +172,8 @@
          <p class="rsc-caption">
            The mission of One Tree Planted is to restore forests and make climate solutions available to everyone. They have partnered with 43+ countries to plant more than 40 million trees in the Americas, and in countries across Asia, Africa, Europe, and the Pacific. This organization continues to create social impacts and commence local initiatives in various regions. In this website, there are resources for teachers, students, individuals, and more. Participate in tree planting events, donate a dollar to plant a tree, or read some tree facts!
          </p>
-       </div>
-       <div class="filterDiv educational nonprofits">
+       </ul>
+       <ul class="filterDiv educational nonprofits">
          <img src="https://www.southpole.com/uploads/thumbs/project_image_303495-3_470x500.jpg.webp" class="rsc-image-left">
 
          <h1>
@@ -181,8 +182,8 @@
 
          <p class="rsc-caption">
            South Pole implements emission-reducing projects and introduces sustainable innovations to communities to install effective and long-term climate solutions. Set targets and implement sustainability strategies with this website, or learn about South Pole's conservation, plastic solution, fresh water, and next-generation farming initiatives in places like Zimbabwe and China. 
-         </p></div>
-       <div class="filterDiv fundraisers">
+         </p></ul>
+       <ul class="filterDiv fundraisers">
 <img src="https://images.squarespace-cdn.com/content/v1/60930b2084ef393517963bbe/1631056850224-CZ031QM8V7IIFB2XMEUQ/2EGC02R+2.jpg?format=1000w" class="rsc-image-left">
 
          <h1>
@@ -192,57 +193,14 @@
          <p class="rsc-caption">
            Climate Emergency Fund's role is to fund the most impactful activists who inspire communities to force politicians to act and diversify climate action by attracting new voices. Using this resource, you can help donate to the grantees or apply for a grant yourself. 
          </p>
-       </div>
+       </ul>
+
+       </li>
      </div>
   
 
-   <script>
-      filterSelection("all")
-      function filterSelection(c) {
-        var x, i;
-        x = document.getElementsByClassName("filterDiv");
-        if (c == "all") c = "";
-
-        for (i = 0; i < x.length; i++) {
-          w3RemoveClass(x[i], "show");
-          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-        }
-      }
-
-       function w3AddClass(element, name) {
-         var i, arr1, arr2;
-         arr1 = element.className.split(" ");
-         arr2 = name.split(" ");
-         for (i = 0; i < arr2.length; i++) {
-           if (arr1.indexOf(arr2[i]) == -1) {
-             element.className += " " + arr2[i];
-            }
-          }
-        }
-
-       function w3RemoveClass(element, name) {
-         var i, arr1, arr2;
-         arr1 = element.className.split(" ");
-         arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-              arr1.splice(arr1.indexOf(arr2[i]), 1);
-            }
-          }
-         element.className = arr1.join(" ");
-        }
-
-
-      var btnContainer = document.getElementById("BtnContainer");
-      var btns = btnContainer.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-       btns[i].addEventListener("click", function() {
-         var current = document.getElementsByClassName("active");
-         current[0].className = current[0].className.replace(" active", "");
-         this.className += " active";
-        });
-      }
-   </script>
+   <script src="filter.js"></script>
+   <script src="randomizeList.js"></script>
    </div>
 
    </div>
