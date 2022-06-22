@@ -20,6 +20,30 @@ header img{
   padding: 15px 0px;
 }
 
+#topBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 25px;
+  z-index: 99; 
+  border-radius: 55%; 
+  border: none;
+  outline: none; 
+  background-color:#527b9c; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  font-size: 18px; 
+}
+
+#topBtn:hover {
+  background-color: #555; 
+}
+
+i.fas.fa-angle-up{
+  padding: 0.25em;
+}
+
 /* navigation bar styling */
 
 .sticky-div{
@@ -474,6 +498,8 @@ footer h3{
 .caption a{
   color: yellow;
 }
+
+#more {display: none;}
 
 
 /* slideshow container */
